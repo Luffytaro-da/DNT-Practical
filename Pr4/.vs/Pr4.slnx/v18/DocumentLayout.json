@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Yash\\MU\\Sem 5\\.net\\Practicals\\Pr4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6360B767-38A5-4FE7-ABDD-CC445449C35A}|Pr4\\Pr4.csproj|c:\\yash\\mu\\sem 5\\.net\\practicals\\pr4\\pr4\\practical_4.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{6360B767-38A5-4FE7-ABDD-CC445449C35A}|Pr4\\Pr4.csproj|solutionrelative:pr4\\practical_4.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Practical_4.aspx",
+              "DocumentMoniker": "C:\\Yash\\MU\\Sem 5\\.net\\Practicals\\Pr4\\Pr4\\Practical_4.aspx",
+              "RelativeDocumentMoniker": "Pr4\\Practical_4.aspx",
+              "ToolTip": "C:\\Yash\\MU\\Sem 5\\.net\\Practicals\\Pr4\\Pr4\\Practical_4.aspx",
+              "RelativeToolTip": "Pr4\\Practical_4.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-08-14T02:21:05.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
