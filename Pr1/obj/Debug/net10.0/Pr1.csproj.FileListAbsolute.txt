@@ -1,0 +1,14 @@
+C:\Yash\MU\Sem 5\.net\Practicals\Pr1\bin\Debug\net10.0\Pr1.exe
+C:\Yash\MU\Sem 5\.net\Practicals\Pr1\bin\Debug\net10.0\Pr1.deps.json
+C:\Yash\MU\Sem 5\.net\Practicals\Pr1\bin\Debug\net10.0\Pr1.runtimeconfig.json
+C:\Yash\MU\Sem 5\.net\Practicals\Pr1\bin\Debug\net10.0\Pr1.dll
+C:\Yash\MU\Sem 5\.net\Practicals\Pr1\bin\Debug\net10.0\Pr1.pdb
+C:\Yash\MU\Sem 5\.net\Practicals\Pr1\obj\Debug\net10.0\Pr1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Yash\MU\Sem 5\.net\Practicals\Pr1\obj\Debug\net10.0\Pr1.AssemblyInfoInputs.cache
+C:\Yash\MU\Sem 5\.net\Practicals\Pr1\obj\Debug\net10.0\Pr1.AssemblyInfo.cs
+C:\Yash\MU\Sem 5\.net\Practicals\Pr1\obj\Debug\net10.0\Pr1.csproj.CoreCompileInputs.cache
+C:\Yash\MU\Sem 5\.net\Practicals\Pr1\obj\Debug\net10.0\Pr1.dll
+C:\Yash\MU\Sem 5\.net\Practicals\Pr1\obj\Debug\net10.0\refint\Pr1.dll
+C:\Yash\MU\Sem 5\.net\Practicals\Pr1\obj\Debug\net10.0\Pr1.pdb
+C:\Yash\MU\Sem 5\.net\Practicals\Pr1\obj\Debug\net10.0\Pr1.genruntimeconfig.cache
+C:\Yash\MU\Sem 5\.net\Practicals\Pr1\obj\Debug\net10.0\ref\Pr1.dll
