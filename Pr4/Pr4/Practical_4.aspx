@@ -1,88 +1,315 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Practical_4.aspx.cs" Inherits="Pr4.Practical_4" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Practical_4.WebForm1" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Event Registration</title>
+    <title>Event Registration Portal</title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+
+        .auto-style3 {
+            width: 230px;
+        }
+
+        .auto-style4 {
+            height: 29px;
+        }
+
+        .auto-style5 {
+            width: 230px;
+            height: 29px;
+        }
+
+        .auto-style6 {
+            height: 33px;
+        }
+
+        .auto-style7 {
+            height: 48px;
+        }
+
+        .auto-style8 {
+            width: 230px;
+            height: 48px;
+        }
+
+        .auto-style9 {
+            width: 208px;
+        }
+
+        .auto-style10 {
+            height: 48px;
+   
+         width: 208px;
+        }
+
+        .auto-style11 {
+            height: 29px;
+            width: 208px;
+        }
+    </style>
 </head>
+
 <body>
     <form id="form1" runat="server">
+
         <div>
-            <h2>Online Event Registration Portal</h2>
-            <asp:ValidationSummary ID="vsSummary" runat="server" ForeColor="Red" />
-            <br />
-            <table border="1" cellpadding="5" cellspacing="0">
-                <tr>
-                    <td>Participant Name:</td>
-                    <td>
-                        <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfvName" runat="server" ControlToValidate="txtName" ErrorMessage="Name is required" ForeColor="Red">*</asp:RequiredFieldValidator>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Email:</td>
-                    <td>
-                        <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is required" ForeColor="Red">*</asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Invalid Email format" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Phone Number:</td>
-                    <td>
-                        <asp:TextBox ID="txtPhone" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfvPhone" runat="server" ControlToValidate="txtPhone" ErrorMessage="Phone Number is required" ForeColor="Red">*</asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="revPhone" runat="server" ControlToValidate="txtPhone" ErrorMessage="Invalid Phone Number (10 digits expected)" ForeColor="Red" ValidationExpression="\d{10}">*</asp:RegularExpressionValidator>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Select Event:</td>
-                    <td>
-                        <asp:DropDownList ID="ddlEvent" runat="server">
-                            <asp:ListItem Value="0">--Select Event--</asp:ListItem>
-                            <asp:ListItem Value="Workshop">Workshop</asp:ListItem>
-                            <asp:ListItem Value="Seminar">Seminar</asp:ListItem>
-                            <asp:ListItem Value="Hackathon">Hackathon</asp:ListItem>
-                        </asp:DropDownList>
-                        <asp:RequiredFieldValidator ID="rfvEvent" runat="server" ControlToValidate="ddlEvent" ErrorMessage="Please select an event" ForeColor="Red" InitialValue="0">*</asp:RequiredFieldValidator>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Gender:</td>
-                    <td>
-                        <asp:RadioButtonList ID="rblGender" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
-                            <asp:ListItem Value="Male">Male</asp:ListItem>
-                            <asp:ListItem Value="Female">Female</asp:ListItem>
-                        </asp:RadioButtonList>
-                        <asp:RequiredFieldValidator ID="rfvGender" runat="server" ControlToValidate="rblGender" ErrorMessage="Please select a gender" ForeColor="Red">*</asp:RequiredFieldValidator>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Interests:</td>
-                    <td>
-                        <asp:CheckBoxList ID="cblInterests" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
-                            <asp:ListItem Value="Coding">Coding</asp:ListItem>
-                            <asp:ListItem Value="Design">Design</asp:ListItem>
-                            <asp:ListItem Value="Networking">Networking</asp:ListItem>
-                        </asp:CheckBoxList>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="top">Event Date:</td>
-                    <td>
-                        <asp:Calendar ID="calEventDate" runat="server"></asp:Calendar>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" align="center">
-                        <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" />
-                    </td>
-                </tr>
-            </table>
-            <br />
-            <asp:Label ID="lblResult" runat="server" Font-Bold="true" ForeColor="Green"></asp:Label>
+            <strong>Event Registration Portal</strong>
         </div>
+
+        <table class="auto-style1">
+
+            <tr>
+                <td class="auto-style9">Name:</td>
+                <td class="auto-style3">
+                    <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1"
+                        runat="server"
+                        ControlToValidate="txtName"
+                        ForeColor="Red"
+                        ErrorMessage="Please enter your name">*</asp:RequiredFieldValidator>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="auto-style9">Email Id:</td>
+                <td class="auto-style3">
+                    <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2"
+                        runat="server"
+                        ControlToValidate="txtEmail"
+                        ForeColor="Red"
+                        ErrorMessage="Please enter email Id">*</asp:RequiredFieldValidator>
+
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1"
+                        runat="server"
+                        ControlToValidate="txtEmail"
+                        ForeColor="Red"
+                        ValidationExpression="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"
+                        ErrorMessage="Enter a valid email 
+
+address">*</asp:RegularExpressionValidator>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="auto-style9">Password:</td>
+                <td class="auto-style3">
+                    <asp:TextBox ID="pwd"
+                        runat="server"
+                        TextMode="Password">
+                    </asp:TextBox>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator8"
+                        runat="server"
+                        ControlToValidate="pwd"
+                        ForeColor="Red"
+                        ErrorMessage="Please enter password">*</asp:RequiredFieldValidator>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="auto-style10">Confirm Password:</td>
+                <td class="auto-style8">
+                    <asp:TextBox ID="cpwd"
+                        runat="server"
+                        TextMode="Password">
+                    </asp:TextBox>
+                </td>
+                <td class="auto-style7">
+
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator9"
+                        runat="server"
+                        ControlToValidate="cpwd"
+                        ErrorMessage="Please enter confirm password"
+                        ForeColor="Red">*</asp:RequiredFieldValidator>
+
+                    <asp:CompareValidator ID="CompareValidator1"
+                        runat="server"
+                        ControlToCompare="pwd"
+                        ControlToValidate="cpwd"
+                        ForeColor="Red"
+                        ErrorMessage="Password not match">*</asp:CompareValidator>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td class="auto-style9">Department:</td>
+                <td class="auto-style3">
+
+                    <asp:DropDownList ID="dept" runat="server">
+
+  
+                      <asp:ListItem Value="0">
+                            Select Department
+                        </asp:ListItem>
+
+                        <asp:ListItem>CE</asp:ListItem>
+                        <asp:ListItem>CSC</asp:ListItem>
+                        <asp:ListItem>CSC - AI &amp; ML</asp:ListItem>
+                        <asp:ListItem>CSC - AI &amp; DS</asp:ListItem>
+                        <asp:ListItem>CSC CS</asp:ListItem>
+                        <asp:ListItem>ICT</asp:ListItem>
+                        <asp:ListItem>IT</asp:ListItem>
+
+                    </asp:DropDownList>
+
+                </td>
+
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3"
+                        runat="server"
+                        ControlToValidate="dept"
+                        ForeColor="Red"
+                        InitialValue="0"
+                        ErrorMessage="Please select your department">*</asp:RequiredFieldValidator>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="auto-style9">Class:</td>
+
+                <td class="auto-style3">
+                    <asp:TextBox ID="txtClass" runat="server"></asp:TextBox>
+                </td>
+
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4"
+                        runat="server"
+                        ControlToValidate="txtClass"
+                        ForeColor="Red"
+                        ErrorMessage="Please enter your class">*</asp:RequiredFieldValidator>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="auto-style9">Enrollment No.:</td>
+
+                <td class="auto-style3">
+                    <asp:TextBox ID="txtEn" runat="server"></asp:TextBox>
+                </td>
+
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5"
+                        runat="server"
+  
+                      ControlToValidate="txtEn"
+                        ForeColor="Red"
+                        ErrorMessage="Please enter your Enrollment no.">*</asp:RequiredFieldValidator>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="auto-style11">Gr No.:</td>
+
+                <td class="auto-style5">
+                    <asp:TextBox ID="txtGr" runat="server"></asp:TextBox>
+                </td>
+
+                <td class="auto-style4">
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6"
+                        runat="server"
+                        ControlToValidate="txtGr"
+                        ForeColor="Red"
+                        ErrorMessage="Please enter your Gr no.">*</asp:RequiredFieldValidator>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="auto-style9">Gender:</td>
+
+                <td class="auto-style3">
+
+                    <asp:RadioButtonList ID="gen"
+                        runat="server"
+                        RepeatDirection="Horizontal">
+
+                        <asp:ListItem>Female</asp:ListItem>
+                        <asp:ListItem>Male</asp:ListItem>
+                        <asp:ListItem>Other</asp:ListItem>
+
+                    </asp:RadioButtonList>
+
+                </td>
+
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7"
+                        runat="server"
+                        ControlToValidate="gen"
+                        ForeColor="Red"
+                        ErrorMessage="Please select your gender">*</asp:RequiredFieldValidator>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="auto-style9">Event:</td>
+
+                <td class="auto-style3">
+
+                    <asp:CheckBoxList ID="event" runat="server">
+
+                        <asp:ListItem>Tech</asp:ListItem>
+                        <asp:ListItem>Non-Tech</asp:ListItem>
+
+                    </asp:CheckBoxList>
+
+                </td>
+
+                <td>
+
+                    <asp:CustomValidator ID="CustomValidator1"
+                        runat="server"
+                        ErrorMessage="Please select at least one event"
+                        ForeColor="Red"
+                        ValidateEmptyText="True"
+                        OnServerValidate="CustomValidator1_ServerValidate">*</asp:CustomValidator>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td class="auto-style6" colspan="3">
+
+                    <asp:Button ID="regBtn"
+                        runat="server"
+                        Text="Register"
+                        OnClick="regBtn_Click" />
+
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+
+                    <asp:ValidationSummary ID="ValidationSummary1"
+                        runat="server"
+                        HeaderText="Please correct the following errors:"
+                        ForeColor="Red" />
+
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+
+                    <asp:Label ID="lblResult"
+                        runat="server">
+                    </asp:Label>
+
+                </td>
+            </tr>
+
+        </table>
+
     </form>
 </body>
 </html>

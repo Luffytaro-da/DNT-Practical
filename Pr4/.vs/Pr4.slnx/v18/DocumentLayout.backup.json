@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{6360B767-38A5-4FE7-ABDD-CC445449C35A}|Pr4\\Pr4.csproj|solutionrelative:pr4\\practical_4.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6360B767-38A5-4FE7-ABDD-CC445449C35A}|Pr4\\Pr4.csproj|c:\\yash\\mu\\sem 5\\.net\\practicals\\pr4\\pr4\\practical_4.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6360B767-38A5-4FE7-ABDD-CC445449C35A}|Pr4\\Pr4.csproj|C:\\Yash\\MU\\Sem 5\\.net\\Practicals\\Pr4\\pr4\\practical_4.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6360B767-38A5-4FE7-ABDD-CC445449C35A}|Pr4\\Pr4.csproj|solutionrelative:pr4\\practical_4.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6360B767-38A5-4FE7-ABDD-CC445449C35A}|Pr4\\Pr4.csproj|c:\\yash\\mu\\sem 5\\.net\\practicals\\pr4\\pr4\\practical_4.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6360B767-38A5-4FE7-ABDD-CC445449C35A}|Pr4\\Pr4.csproj|C:\\Yash\\MU\\Sem 5\\.net\\Practicals\\Pr4\\pr4\\practical_4.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6360B767-38A5-4FE7-ABDD-CC445449C35A}|Pr4\\Pr4.csproj|solutionrelative:pr4\\practical_4.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6360B767-38A5-4FE7-ABDD-CC445449C35A}|Pr4\\Pr4.csproj|C:\\Yash\\MU\\Sem 5\\.net\\Practicals\\Pr4\\pr4\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6360B767-38A5-4FE7-ABDD-CC445449C35A}|Pr4\\Pr4.csproj|solutionrelative:pr4\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,34 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Practical_4.aspx.designer.cs",
-              "DocumentMoniker": "C:\\Yash\\MU\\Sem 5\\.net\\Practicals\\Pr4\\Pr4\\Practical_4.aspx.designer.cs",
-              "RelativeDocumentMoniker": "Pr4\\Practical_4.aspx.designer.cs",
-              "ToolTip": "C:\\Yash\\MU\\Sem 5\\.net\\Practicals\\Pr4\\Pr4\\Practical_4.aspx.designer.cs",
-              "RelativeToolTip": "Pr4\\Practical_4.aspx.designer.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-14T03:01:30.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Practical_4.aspx.cs",
-              "DocumentMoniker": "C:\\Yash\\MU\\Sem 5\\.net\\Practicals\\Pr4\\Pr4\\Practical_4.aspx.cs",
-              "RelativeDocumentMoniker": "Pr4\\Practical_4.aspx.cs",
-              "ToolTip": "C:\\Yash\\MU\\Sem 5\\.net\\Practicals\\Pr4\\Pr4\\Practical_4.aspx.cs",
-              "RelativeToolTip": "Pr4\\Practical_4.aspx.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-14T02:58:48.531Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -60,7 +38,46 @@
               "RelativeToolTip": "Pr4\\Practical_4.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-08-14T02:21:05.393Z",
+              "WhenOpened": "2026-08-21T05:22:44.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Practical_4.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Yash\\MU\\Sem 5\\.net\\Practicals\\Pr4\\Pr4\\Practical_4.aspx.designer.cs",
+              "RelativeDocumentMoniker": "Pr4\\Practical_4.aspx.designer.cs",
+              "ToolTip": "C:\\Yash\\MU\\Sem 5\\.net\\Practicals\\Pr4\\Pr4\\Practical_4.aspx.designer.cs",
+              "RelativeToolTip": "Pr4\\Practical_4.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-21T05:22:42.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Practical_4.aspx.cs",
+              "DocumentMoniker": "C:\\Yash\\MU\\Sem 5\\.net\\Practicals\\Pr4\\Pr4\\Practical_4.aspx.cs",
+              "RelativeDocumentMoniker": "Pr4\\Practical_4.aspx.cs",
+              "ToolTip": "C:\\Yash\\MU\\Sem 5\\.net\\Practicals\\Pr4\\Pr4\\Practical_4.aspx.cs",
+              "RelativeToolTip": "Pr4\\Practical_4.aspx.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAgwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-21T05:22:37.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Yash\\MU\\Sem 5\\.net\\Practicals\\Pr4\\Pr4\\Web.config",
+              "RelativeDocumentMoniker": "Pr4\\Web.config",
+              "ToolTip": "C:\\Yash\\MU\\Sem 5\\.net\\Practicals\\Pr4\\Pr4\\Web.config",
+              "RelativeToolTip": "Pr4\\Web.config",
+              "ViewState": "AgIAAA8AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-08-21T05:15:35.593Z",
               "EditorCaption": ""
             }
           ]

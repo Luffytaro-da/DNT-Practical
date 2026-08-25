@@ -12,3 +12,4 @@ C:\Yash\MU\Sem 5\.net\Practicals\Pr3\obj\Debug\net10.0\refint\Pr3.dll
 C:\Yash\MU\Sem 5\.net\Practicals\Pr3\obj\Debug\net10.0\Pr3.pdb
 C:\Yash\MU\Sem 5\.net\Practicals\Pr3\obj\Debug\net10.0\Pr3.genruntimeconfig.cache
 C:\Yash\MU\Sem 5\.net\Practicals\Pr3\obj\Debug\net10.0\ref\Pr3.dll
+C:\Yash\MU\Sem 5\.net\Practicals\Pr3\obj\Debug\net10.0\Pr3.sourcelink.json

@@ -1,38 +1,72 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Pr4
+namespace Practical_4
 {
-    public partial class Practical_4 : System.Web.UI.Page
+    public partial class WebForm1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Disable unobtrusive validation to avoid jQuery dependency errors usually seen in new VS projects
-            UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
         }
 
-        protected void btnRegister_Click(object sender, EventArgs e)
+        protected void regBtn_Click(object sender, EventArgs e)
         {
+            Page.Validate();
+
             if (Page.IsValid)
             {
-                // Retrieve the inputted data
-                string participantName = txtName.Text;
-                string selectedEvent = ddlEvent.SelectedItem.Text;
+                string events = "";
 
-                // Read the date from the calendar. If no date is selected, provide a fallback.
-                string eventDate = "Not Selected";
-                if (calEventDate.SelectedDate != DateTime.MinValue)
+                foreach (ListItem item in @event.Items)
                 {
-                    eventDate = calEventDate.SelectedDate.ToShortDateString();
+                    if (item.Selected)
+                    {
+                        if (events != "")
+                        {
+                            events += " , ";
+                        }
+
+                        events += item.Text;
+                    }
                 }
 
-                // Display success message
-                lblResult.Text = $"Registration Successful! Participant: {participantName} | Event: {selectedEvent} | Date: {eventDate}";
+                lblResult.Text =
+                    "<br/><b>Registration successfully Done!</b><br/><br/>" +
+                    "<b>Name:</b> " + txtName.Text + "<br/>" +
+                    "<b>Email Id:</b> " + txtEmail.Text + "<br/>" +
+                    "<b>Department:</b> " + dept.SelectedItem.Text + "<br/>" +
+                    "<b>Class:</b> " + txtClass.Text + "<br/>" +
+                    "<b>Enrollment No.:</b> " + txtEn.Text + "<br/>" +
+                    "<b>Gr No.:</b> " + txtGr.Text + "<br/>" +
+                    "<b>Gender:</b> " + gen.SelectedValue + "<br/>" +
+                    "<b>Event:</b> " + events;
             }
+        }
+
+
+        protected void CustomValidator1_ServerValidate(
+              object source,
+              ServerValidateEventArgs args)
+        {
+
+            args.IsValid = false;
+
+            foreach (ListItem item in @event.Items)
+            {
+                if (item.Selected)
+                {
+                    args.IsValid = true;
+                    break;
+                }
+            }
+        }
+
+        protected void RadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+        }
+
+        protected void TextBox6_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }
