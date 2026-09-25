@@ -1,0 +1,16 @@
+@model pr6.Models.Product
+
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<h2>Product Details</h2>
+<div class="card" style="width:50%">
+    <div class="card-body">
+        <h5 class="card-title">@Model.ProductName</h5>
+        <p class="card-text"><strong>Product ID:</strong> @Model.ProductId</p>
+        <p class="card-text"><strong>Price:</strong> @Model.Price.ToString("0.00")</p>
+        <p class="card-text"><strong>Category:</strong> @Model.Category</p>
+        <a asp-controller="Product" asp-action="Index" class="btn btn-primary">Back to Catalog</a>
+    </div>
+</div>

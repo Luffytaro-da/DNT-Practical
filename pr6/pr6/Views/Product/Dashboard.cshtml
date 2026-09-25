@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<div class="jumbotron mt-4">
+    <h1 class="display-4">Welcome to the Product Catalog</h1>
+    <p class="lead">This is a simple product catalog application . Use the catalog link to view products.</p>
+    <hr class="my-4" />
+    <p>
+        <a class="btn btn-primary btn-lg" asp-controller="Product" asp-action="Index" role="button">View Catalog</a>
+        <a class="btn btn-secondary btn-lg" asp-controller="Product" asp-action="Index" role="button">Browse Products</a>
+    </p>
+</div>
